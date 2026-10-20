@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CalcService implements CalcInPort {
 
-    CalcOutPort coutp;
+    final CalcOutPort coutp;
 
     @Autowired
     public CalcService(CalcOutPort coutp){

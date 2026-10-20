@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyService implements MyInPort {
 
-    MyOutPort myOutPort;
+    final MyOutPort myOutPort;
 
     @Autowired
     public MyService(MyOutPort m){
